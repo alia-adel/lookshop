@@ -6561,7 +6561,7 @@ body {
   background-color: #000;
   min-height: 30px; }
   .app-login-header .app-currency-switcher {
-    border: 2px groove #444444;
+    border: 2px groove #444;
     border-top: none;
     border-bottom: none;
     padding: 0 10px; }
@@ -6573,12 +6573,14 @@ body {
       cursor: pointer; }
   .app-login-header .app-myaccount-container {
     border: none;
-    border-right: 2px groove #444444;
+    border-right: 2px groove #444;
     padding: 0 10px; }
     .app-login-header .app-myaccount-container .fa-user {
+      color: #ededed;
       padding-right: 10px; }
   .app-login-header .app-search {
-    padding: 0 0 0 10px;
+    padding: 10px;
+    border-right: 2px groove #444;
     cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

@@ -11,7 +11,7 @@
     min-height: 30px;    
 
     .app-currency-switcher {
-        border: 2px groove #444444;
+        border: 2px groove #444;
         border-top: none;
         border-bottom: none;
         .currency-switcher-button {
@@ -25,15 +25,17 @@
     }
     .app-myaccount-container {
         border: none;
-        border-right: 2px groove #444444;
+        border-right: 2px groove #444;
         padding: 0 10px;
         .fa-user {
+            color: map-get($ls-bg-colors, 'dark-grey');
             padding-right: 10px;
         }
     }
 
     .app-search {
-        padding: 0 0 0 10px;
+        padding: 10px;
+        border-right: 2px groove #444;
         cursor: pointer;
     }
 }
