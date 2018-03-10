@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.app-login-header {
+    font-family: $ls-primary-font;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 2.7;
+    color: #fff;
+    background-color: map-get($ls-bg-colors, 'black');
+    min-height: 30px;    
+
+    .app-currency-switcher {
+        border: 2px groove #444444;
+        border-top: none;
+        border-bottom: none;
+        .currency-switcher-button {
+            background: map-get($ls-bg-colors, 'black');
+            border: none;
+            color: #fff;
+            outline: #fff;
+            cursor: pointer;
+        }
+        padding: 0 10px;
+    }
+    .app-myaccount-container {
+        border: none;
+        border-right: 2px groove #444444;
+        padding: 0 10px;
+        .fa-user {
+            padding-right: 10px;
+        }
+    }
+
+    .app-search {
+        padding: 0 0 0 10px;
+        cursor: pointer;
+    }
+}

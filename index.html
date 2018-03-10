@@ -4,76 +4,61 @@
 <head>
 	<title>Look Shop</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/stylesheets/scss/main.css" />
 </head>
 
 <body>
-	<h1>Hi World</h1>
-	<div id="accordion">
-		<div class="card">
-			<div class="card-header" id="headingOne">
-				<h5 class="mb-0">
-					<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						Collapsible Group Item #1
-					</button>
-				</h5>
-			</div>
-
-			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-				<div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-					non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-					put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-					labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-					beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-					VHS.
+	<!-- Login Header Component -->
+	<div class="app-login-header container-fluid clear-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-4 d-flex align-items-center justify-content-start flex-wrap">
+					<label class="uppercase clear-margin">Customer Care:&nbsp;</label>
+					<span>888-23-4577</span>
 				</div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="card-header" id="headingTwo">
-				<h5 class="mb-0">
-					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						Collapsible Group Item #2
-					</button>
-				</h5>
-			</div>
-			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-				<div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-					non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-					put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-					labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-					beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-					VHS.
-				</div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="card-header" id="headingThree">
-				<h5 class="mb-0">
-					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						Collapsible Group Item #3
-					</button>
-				</h5>
-			</div>
-			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-				<div class="card-body">
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-					non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-					put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-					labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-					beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-					VHS.
+				<div class="col-sm-12 col-md-4 col-lg-3 offset-md-4 offset-lg-5 d-flex align-items-center justify-content-end flex-wrap">
+					<div class="app-currency-switcher dropdown">
+						<span type="button" class="currency-switcher-button dropdown-toggle" data-toggle="dropdown">
+							$ US
+						</span>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Link 1</a>
+							<a class="dropdown-item" href="#">Link 2</a>
+							<a class="dropdown-item" href="#">Link 3</a>
+						</div>
+					</div>
+					<div class="app-myaccount-container d-flex align-items-center justify-content-between flex-wrap">
+						<i class="fas fa-user"></i>
+						<label class="uppercase clear-margin">My Account</label>
+					</div>
+					<i class="app-search fas fa-search"></i>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- end of Login Header Component -->
+	<!-- Application Main Header Component -->
+	<header class="app-main-header container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-4">
+					<figure class="app-logo-img-container">
+						<img src="./assets/images/logo.png" alt="Look Shop Logo, eye glasses replacing the double o letters" class="app-logo-img img-fluid">
+					</figure>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end of Application Main Header Component -->
+
+
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	    crossorigin="anonymous"></script>
+	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	    crossorigin="anonymous"></script>
+	 crossorigin="anonymous"></script>
 	<script src="./vendor/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
 </body>
 

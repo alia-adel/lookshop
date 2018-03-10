@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  // 'vendor/normalize'
+  '../css/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css',
+  '../../../vendor/bootstrap-4.0.0/scss/bootstrap.scss';
+  // '../../../vendor/bootstrap-4.0.0/dist/css/bootstrap.min.css';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';
