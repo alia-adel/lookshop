@@ -6494,7 +6494,7 @@ html {
  */
 body {
   color: #373737;
-  font: Arial; }
+  font: normal 16px Arial; }
 
 /**
  * Clear inner floats
@@ -6552,9 +6552,13 @@ body {
 .clear-padding {
   padding: 0 !important; }
 
+.padding20-vertical {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 .app-login-header {
   font-family: Arial;
-  font-size: 11px;
+  font-size: 0.7rem;
   font-weight: 400;
   line-height: 2.7;
   color: #fff;
@@ -6575,9 +6579,31 @@ body {
     border: none;
     border-right: 2px groove #444;
     padding: 0 10px; }
-    .app-login-header .app-myaccount-container .fa-user {
-      color: #ededed;
-      padding-right: 10px; }
+    .app-login-header .app-myaccount-container * {
+      color: #fff;
+      text-decoration: none; }
+    .app-login-header .app-myaccount-container a {
+      cursor: pointer; }
+      .app-login-header .app-myaccount-container a .fa-user {
+        color: #ededed;
+        padding-right: 10px; }
+  .app-login-header #search-box {
+    color: inherit;
+    font-size: inherit;
+    width: 0;
+    height: 70%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    padding: 0;
+    transition: width 0.5s linear; }
+    .app-login-header #search-box:focus {
+      border-right: none;
+      outline: #fff; }
+    .app-login-header #search-box.show {
+      width: 200px;
+      margin: 0 10px; }
   .app-login-header .app-search {
     padding: 10px;
     border-right: 2px groove #444;

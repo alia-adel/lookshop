@@ -18,7 +18,7 @@
 					<label class="uppercase clear-margin">Customer Care:&nbsp;</label>
 					<span>888-23-4577</span>
 				</div>
-				<div class="col-sm-12 col-md-4 col-lg-3 offset-md-4 offset-lg-5 d-flex align-items-center justify-content-end flex-wrap">
+				<div class="col-sm-12 col-md-6 col-lg-5 offset-md-2 offset-lg-3 d-flex align-items-center justify-content-end flex-wrap">
 					<div class="app-currency-switcher dropdown">
 						<span type="button" class="currency-switcher-button dropdown-toggle" data-toggle="dropdown">
 							$ US
@@ -30,10 +30,14 @@
 						</div>
 					</div>
 					<div class="app-myaccount-container d-flex align-items-center justify-content-between flex-wrap">
-						<i class="fas fa-user"></i>
-						<label class="uppercase clear-margin">My Account</label>
+						<a href="#">
+							<i class="fas fa-user"></i>
+							<label class="uppercase clear-margin">My Account</label>
+						</a>
 					</div>
+					<input type="search" name="app-search-box" id="search-box" placeholder="Seach for a product">
 					<i class="app-search fas fa-search"></i>
+
 				</div>
 			</div>
 		</div>
@@ -42,11 +46,51 @@
 	<!-- Application Main Header Component -->
 	<header class="app-main-header container-fluid">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-4">
-					<figure class="app-logo-img-container">
-						<img src="./assets/images/logo.png" alt="Look Shop Logo, eye glasses replacing the double o letters" class="app-logo-img img-fluid">
-					</figure>
+			<div class="row padding20-vertical">
+				<!-- App Logo -->
+				<div class="col-sm-12 col-md-2">
+					<a href="#">
+						<figure class="app-logo-img-container">
+							<img src="./assets/images/logo.png" alt="Look Shop Logo, eye glasses replacing the double o letters" class="app-logo-img img-fluid">
+						</figure>
+					</a>
+				</div>
+				<!-- Navigation bar -->
+				<div class="col-sm-12 col-lg-6 offset-lg-2">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">						
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+						    aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav mr-auto">
+									<li class="nav-item dropdown">
+											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											  Dropdown
+											</a>
+											<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											  <a class="dropdown-item" href="#">Action</a>
+											  <a class="dropdown-item" href="#">Another action</a>
+											  <div class="dropdown-divider"></div>
+											  <a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										  </li>
+								<!-- <li class="nav-item">
+									<a class="nav-link disabled" href="#">Disabled</a>
+								</li> -->
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<!-- My Cart -->
+				<div class="col-sm-12 col-lg-2">
+					<div class="form-group">
+						<select name="my-cart" id="my-cart" class="form-control">
+							<option value="all" disabled>Your Cart</option>
+							<option value="123">Dress</option>
+						</select>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -56,10 +100,11 @@
 
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	 crossorigin="anonymous"></script>
+	    crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	 crossorigin="anonymous"></script>
+	    crossorigin="anonymous"></script>
 	<script src="./vendor/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+	<script src="Scripts/main.js"></script>
 </body>
 
 </html>

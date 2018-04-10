@@ -3,13 +3,12 @@
 // -----------------------------------------------------------------------------
 .app-login-header {
     font-family: $ls-primary-font;
-    font-size: 11px;
+    font-size: 0.7rem;
     font-weight: 400;
     line-height: 2.7;
-    color: #fff;
+    color: $ls-contrast-font-color;
     background-color: map-get($ls-bg-colors, 'black');
-    min-height: 30px;    
-
+    min-height: 30px;
     .app-currency-switcher {
         border: 2px groove #444;
         border-top: none;
@@ -17,8 +16,8 @@
         .currency-switcher-button {
             background: map-get($ls-bg-colors, 'black');
             border: none;
-            color: #fff;
-            outline: #fff;
+            color: $ls-contrast-font-color;
+            outline: $ls-contrast-font-color;
             cursor: pointer;
         }
         padding: 0 10px;
@@ -27,12 +26,40 @@
         border: none;
         border-right: 2px groove #444;
         padding: 0 10px;
-        .fa-user {
-            color: map-get($ls-bg-colors, 'dark-grey');
-            padding-right: 10px;
+        * {
+            color: $ls-contrast-font-color;
+            text-decoration: none;
+        }
+        a {
+            cursor: pointer;
+            .fa-user {
+                color: map-get($ls-bg-colors, 'dark-grey');
+                padding-right: 10px;
+            }
+        }
+    } 
+    
+    //TODO: this is a draft search box, needs revisiting
+    #search-box {
+        color: inherit;
+        font-size: inherit;
+        width: 0;
+        height: 70%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #fff;
+        border-radius: 0;
+        padding: 0;
+        transition: width 0.5s linear;
+        &:focus {
+            border-right: none;
+            outline: $ls-contrast-font-color;
+        }
+        &.show {
+            width: 200px;
+            margin: 0 10px;
         }
     }
-
     .app-search {
         padding: 10px;
         border-right: 2px groove #444;
