@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the navigation of the site/application.
+// -----------------------------------------------------------------------------
+.app-nav.navbar.navbar-expand-lg {
+    float: right;
+    .menu-title {
+        display: none;
+        font-size: 1.125rem;
+        color: #fff;
+        margin: 0;
+    }
+    #navbarNav {
+        .navbar-nav {
+            .nav-item.dropdown {
+                padding: 0 5px;
+                .nav-link.dropdown-toggle {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+// Navigation responsive styles
+@media only screen and (max-width: 991px) {
+    .app-nav-container {
+        order: 10;
+        width: 100%;
+        margin: 20px 0;
+        .app-nav.navbar.navbar-expand-lg {
+            color: #fff;
+            width: 100%;
+            background: map-get($ls-bg-colors, 'pink-orange');
+            .menu-title {
+                display: block;
+            }
+            button.navbar-toggler {
+                color: #fff;
+                &:focus {
+                    outline: 5px auto #fff;
+                }
+            }
+            #navbarNav {
+                .navbar-nav {
+                    .nav-item.dropdown {
+                        color: #fff;
+                        .nav-link.dropdown-toggle {
+                            color: #fff;
+                            padding-left: 0;
+                        }
+                        .dropdown-menu {
+                            border: none;
+                            border-radius: 5px;
+
+                            .dropdown-item {
+                                text-transform: lowercase;
+                            }
+                        }
+
+                        &.show {                            
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+    .app-nav-container {
+        .app-nav.navbar.navbar-expand-lg {
+            .menu-title {
+                display: block;
+                font-size: 1.875rem;
+            }
+            button.navbar-toggler {
+                font-size: 1.875rem;
+            }
+        }
+    }
+}

@@ -14,11 +14,11 @@
 	<div class="app-login-header container-fluid clear-padding">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-4 d-flex align-items-center justify-content-start flex-wrap">
+				<div class="header-cc col-sm-12 col-md-4 d-flex align-items-center justify-content-start flex-wrap">
 					<label class="uppercase clear-margin">Customer Care:&nbsp;</label>
 					<span>888-23-4577</span>
 				</div>
-				<div class="col-sm-12 col-md-6 col-lg-5 offset-md-2 offset-lg-3 d-flex align-items-center justify-content-end flex-wrap">
+				<div class="header-info col-sm-12 col-md-8 col-lg-5 offset-lg-3 d-flex align-items-center justify-content-end flex-wrap">
 					<div class="app-currency-switcher dropdown">
 						<span type="button" class="currency-switcher-button dropdown-toggle" data-toggle="dropdown">
 							$ US
@@ -37,7 +37,6 @@
 					</div>
 					<input type="search" name="app-search-box" id="search-box" placeholder="Seach for a product">
 					<i class="app-search fas fa-search"></i>
-
 				</div>
 			</div>
 		</div>
@@ -46,51 +45,119 @@
 	<!-- Application Main Header Component -->
 	<header class="app-main-header container-fluid">
 		<div class="container">
-			<div class="row padding20-vertical">
+			<div class="row main-header-row d-flex align-items-center padding20-vertical">
 				<!-- App Logo -->
-				<div class="col-sm-12 col-md-2">
-					<a href="#">
+				<div class="col-sm-12 col-md-6 col-lg-2">
+					<a href="#" id="app-logo-container">
+						<h1 id="mobile-logo">l<img src="./assets/images/oo.png" alt="eye glasses representing the two O's in Look" class="img-fluid">kshop</h1>
 						<figure class="app-logo-img-container">
 							<img src="./assets/images/logo.png" alt="Look Shop Logo, eye glasses replacing the double o letters" class="app-logo-img img-fluid">
 						</figure>
 					</a>
 				</div>
 				<!-- Navigation bar -->
-				<div class="col-sm-12 col-lg-6 offset-lg-2">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">						
+				<div class="app-nav-container col-sm-12 col-lg-6 offset-lg-1">
+					<nav class="app-nav navbar navbar-expand-lg d-flex align-items-center">
+						<h3 class="menu-title captilize">menu</h3>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-						    aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
+							aria-label="Toggle navigation">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+							<!-- <span class="navbar-toggler-icon">									
+							</span> -->
 						</button>
 						<div class="collapse navbar-collapse" id="navbarNav">
 							<ul class="navbar-nav mr-auto">
-									<li class="nav-item dropdown">
-											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											  Dropdown
-											</a>
-											<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-											  <a class="dropdown-item" href="#">Action</a>
-											  <a class="dropdown-item" href="#">Another action</a>
-											  <div class="dropdown-divider"></div>
-											  <a class="dropdown-item" href="#">Something else here</a>
-											</div>
-										  </li>
-								<!-- <li class="nav-item">
-									<a class="nav-link disabled" href="#">Disabled</a>
-								</li> -->
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle lowercase d-flex align-items-center" href="#" id="newDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+									    aria-expanded="false">
+										New
+									</a>
+									<div class="dropdown-menu" aria-labelledby="newDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>										
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle lowercase d-flex align-items-center" href="#" id="designersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+									    aria-expanded="false">
+										designers
+									</a>
+									<div class="dropdown-menu" aria-labelledby="designersDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle lowercase d-flex align-items-center" href="#" id="womenDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+									    aria-expanded="false">
+										women
+									</a>
+									<div class="dropdown-menu" aria-labelledby="womenDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>										
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle lowercase d-flex align-items-center" href="#" id="menDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+									    aria-expanded="false">
+										men
+									</a>
+									<div class="dropdown-menu" aria-labelledby="menDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle lowercase d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+									    aria-expanded="false">
+										clearance
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</nav>
 				</div>
 				<!-- My Cart -->
-				<div class="col-sm-12 col-lg-2">
-					<div class="form-group">
-						<select name="my-cart" id="my-cart" class="form-control">
-							<option value="all" disabled>Your Cart</option>
-							<option value="123">Dress</option>
-						</select>
+				<div class="col-sm-12 col-md-6 col-lg-3">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="mycart-container">
+								<div class="mycart-header d-flex align-items-center justify-content-between">
+									<span class="captilize">your cart</span>
+									<i class="fa fa-caret-down" aria-hidden="true"></i>
+									<div id="mycart">
+										<div class="card" style="width: 18rem;">
+											<div class="card-body">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">Cras justo odio</li>
+												<li class="list-group-item">Dapibus ac facilisis in</li>
+											</ul>
+											<div class="card-body">
+												<a href="#" class="card-link">Card link</a>
+												<a href="#" class="card-link">Another link</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mycart-summary-container d-flex align-items-center justify-content-between">
+										<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+										<div class="cart-summary  d-flex align-items-center justify-content-end">
+											<span class="item-count">2</span>
+											<span class="items uppercase">Items</span>
+											<span class="currency">$</span>
+											<span class="price">20</span>
+										</div>
+								</div>
+							</div>
+						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>

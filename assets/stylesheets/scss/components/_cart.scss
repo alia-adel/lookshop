@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the cart component
+// -----------------------------------------------------------------------------
+.mycart-container {
+    color: #949393;
+    border: 1px solid #d6d6d6;
+    width: 214px;
+    float: right;
+
+    .mycart-header {
+        height: 33px;        
+        padding: 0 8px;
+        position: relative;                
+        font-size: 0.75rem;        
+        cursor: pointer;
+        border-bottom: 1px solid #d6d6d6;
+
+        #mycart {
+            display: none;
+            &.active {
+                display: block;
+                position: absolute;
+                top: 33px;
+                left: -1px;
+                right: 0;
+            }
+        }
+    }
+    .mycart-summary-container {
+        height: 33px;        
+        padding: 0 8px;
+        font-size: 0.7rem;
+        background: map-get($ls-bg-colors, 'light-grey');
+
+        .cart-summary {
+            .items {
+                padding: 0 7px 0 3px;
+                border-right: 1px solid #949393;
+            }
+            .currency {
+                padding: 0 3px 0 7px;
+            }
+        }
+    }
+}
