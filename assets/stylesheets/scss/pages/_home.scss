@@ -1,3 +1,30 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+// Home Products' slider
+#productsTab {
+    .nav-item {
+        height: 48px;
+        width: 136px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        a {
+            height: 100%;
+            width: 100%;
+            font-family: $ls-primary-font;
+            color: #555;
+            font-size: 0.9375rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+
+#productsTabContent {
+    background: map-get($ls-bg-colors, 'pink-orange');
+    padding: 15px;
+    overflow-x: auto;
+}
+
+// End of Home Product's slider
