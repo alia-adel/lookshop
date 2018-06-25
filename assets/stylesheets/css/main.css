@@ -6957,7 +6957,7 @@ body {
 
 #productsTabContent {
   background: #fd926d;
-  padding: 15px;
+  padding: 15px 7.5px;
   overflow: hidden; }
   #productsTabContent .tab-pane {
     width: 999999px; }
