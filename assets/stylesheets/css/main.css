@@ -6677,6 +6677,8 @@ body {
     width: 100%; }
     .app-main-header .main-header-row .mycart-container .mycart-header {
       display: none !important; }
+      .app-main-header .main-header-row .mycart-container .mycart-header #mycart .cart {
+        z-index: 100; }
     .app-main-header .main-header-row .mycart-container .mycart-summary-container {
       font-size: 1.875rem;
       height: 96px;

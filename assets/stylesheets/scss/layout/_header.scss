@@ -152,6 +152,11 @@
 
                 .mycart-header {
                     display: none !important;
+                     #mycart {
+                         .cart {
+                             z-index: 100;
+                         }
+                     }
                 }
 
                 .mycart-summary-container {
