@@ -213,10 +213,10 @@
 
 	<!-- Products' Slider -->
 
-	<div class="container-fluid clear-padding margin20-vertical">
+	<div class="container-fluid clear-padding margin20-vertical" id="products-slider">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-flex align-items-center justify-content-between">
 					<ul class="nav nav-tabs" id="productsTab" role="tablist">
 						<li class="nav-item">
 							<a class="nav-link active" id="hot-tab" data-toggle="tab" href="#hot" role="tab" aria-controls="home" aria-selected="true">Whats's Hot?</a>
@@ -231,6 +231,16 @@
 							<a class="nav-link" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="contact" aria-selected="false">Latest</a>
 						</li>
 					</ul>
+					<section class="slider-nav d-flex align-items-center justify-content-end">
+						<div id="slide-left-container">
+							<div class="slide-left">
+							</div>
+						</div>
+						<div id="slide-right-container">
+							<div class="slide-right">
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
 		</div>
@@ -437,12 +447,12 @@
 
 
 	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	    crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 	    crossorigin="anonymous"></script>
 	<script src="./vendor/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
-	<script src="Scripts/main.js"></script>
+	<script src="./scripts/main.js"></script>
 </body>
 
 </html>
