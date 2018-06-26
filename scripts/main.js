@@ -7,32 +7,13 @@ function updateSliderArrowsStatus(
     cardCount,
     cardWidth
 ) {
-
-    console.log(`
-    ********************************
-    Container: ${cardsContainer}
-    Conatiner Width: ${containerWidth}
-    Card Count: ${cardCount}
-    Card Width: ${cardWidth}
-    `);
-    console.log(`
-    Is there items on the right?
-    Is ${$(cardsContainer).scrollLeft() + containerWidth} < ${(cardCount * cardWidth) + 15}
-    `);
     if ($(cardsContainer).scrollLeft() + containerWidth < (cardCount * cardWidth) + 15) {
-        console.log('Yes, add right active class');
         $('#slide-right-container').addClass("active");
     } else {
         $('#slide-right-container').removeClass("active");
     }
 
-    console.log(`
-    Is there items on the left?
-    Is ${$(cardsContainer).scrollLeft() + containerWidth} > ${containerWidth}
-    `);
-
     if ($(cardsContainer).scrollLeft() > 0) {
-        console.log('Yes, add left active class');
         $('#slide-left-container').addClass("active");
     } else {
         $('#slide-left-container').removeClass("active");
@@ -42,7 +23,7 @@ function updateSliderArrowsStatus(
 /**
  * @description fill products' cards
  */
-function loadCards(tabID, cards){
+function loadCards(tabID, cards) {
 
 }
 
@@ -63,32 +44,51 @@ $(function () {
     let speed = 1000;
     let containerWidth = $('#products-slider').width();
     let cardWidth = 250;
-    
-    updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+
+    setTimeout(updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth), 1000);    
 
     //Remove scrollbars    
     //TODO theres still an issue in activating the arrows
-    $('#slide-right-container').click(function (e) {        
+    $('#slide-right-container').click(function (e) {
         if (($(div).scrollLeft() + containerWidth) < (cardCount * cardWidth) + 15) {
             $(div).animate({
                 scrollLeft: $(div).scrollLeft() + cardWidth
             }, {
-                duration: speed,
-                complete: updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth)
-            });
-        }  
-        updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+                    duration: speed,
+                    complete: function () {
+                        setTimeout(
+                            updateSliderArrowsStatus(
+                                div,
+                                containerWidth,
+                                cardCount,
+                                cardWidth
+                            ),
+                            1005
+                        );
+                    }
+                });
+        }
+
     });
-    $('#slide-left-container').click(function (e) {        
+    $('#slide-left-container').click(function (e) {
         if (($(div).scrollLeft() + containerWidth) > containerWidth) {
             $(div).animate({
                 scrollLeft: '-=' + cardWidth
-            },  {
-                duration: speed,
-                complete: updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth)
-            });            
-        }     
-        updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+            }, {
+                    duration: speed,
+                    complete: function () {
+                        setTimeout(
+                            updateSliderArrowsStatus(
+                                div,
+                                containerWidth,
+                                cardCount,
+                                cardWidth
+                            ),
+                            1005
+                        );
+                    }
+                });
+        }
     });
 
 
