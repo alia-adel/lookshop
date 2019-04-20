@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Arial', sans-serif !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #373737;
+
+/// Primary brand color
+/// @type Color
+$primary-color: hsl(15, 97%, 71%);
+
+/// Primary brand color tint2
+/// @type Color
+$primary-tint2-color: hsl(15, 69%, 57%); 
+
+/// Secondary brand color
+/// @type Color
+$secondary-border: hsl(0, 0%, 32%);
+
+/// generic colors
+$black-color: hsl(0, 0%, 0%);
+$white-color: hsl(0, 0%, 100%);
+
+
+//=== Components' variables
+
+/// Button border brand color
+/// @type Color
+$btn-border: $primary-tint2-color;
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
