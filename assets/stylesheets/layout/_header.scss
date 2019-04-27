@@ -7,37 +7,32 @@ header {
         height: 30px;
         background-color: $black-color;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             background-color: transparent;
             height: auto;
         }
 
         .top-row-container {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
+            height: 100%;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                 flex-direction: column;
+                max-width: 100%;
+                margin-right: 0;
+                margin-left: 0;
                 padding: 0;
             }
 
-            .customer-care {
+            .customer-care-wrapper {
                 font-size: 0.6875rem;
                 font-weight: normal;
                 color: $white-color;
                 @extend .text-uppercase;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     display: -webkit-box;
                     display: -ms-flexbox;
                     display: flex;
@@ -47,23 +42,31 @@ header {
                     -webkit-box-pack: center;
                     -ms-flex-pack: center;
                     justify-content: center;
+                    -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
                     width: 100%;
-                    height: 30px;
-                    color: $text-color;
+                    height: 96px;
+                    font-size: 1.875rem;
+                    line-height: 2.25;
+                    color: $text-color-4;
                     padding-left: 15px;
                     padding-right: 15px;
                     text-transform: uppercase;
                 }
 
+                @media screen and (max-width: 530px) {
+                    font-size: 1.2rem;
+                    line-height: 1;
+                }
                 >span {
                     padding-left: 5px;
                 }
             }
 
-            .quick-menu {
+            .quick-menu-wrapper {
                 color: $white-color;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     display: -webkit-box;
                     display: -ms-flexbox;
                     display: flex;
