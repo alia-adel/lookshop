@@ -5,7 +5,7 @@
 header {
     .top-row {
         height: 30px;
-        background-color: $black-color;
+        background-color: $header-top-row-bg-color;
 
         @media screen and (max-width: 767px) {
             background-color: transparent;
@@ -29,7 +29,7 @@ header {
             .customer-care-wrapper {
                 font-size: 0.6875rem;
                 font-weight: normal;
-                color: $white-color;
+                color: $header-top-row-text-color;
                 @extend .text-uppercase;
 
                 @media screen and (max-width: 767px) {
@@ -48,7 +48,7 @@ header {
                     height: 96px;
                     font-size: 1.875rem;
                     line-height: 2.25;
-                    color: $text-color-4;
+                    color: $header-top-row-mob-text-color;
                     padding-left: 15px;
                     padding-right: 15px;
                     text-transform: uppercase;
@@ -64,7 +64,7 @@ header {
             }
 
             .quick-menu-wrapper {
-                color: $white-color;
+                color: $header-top-row-text-color;
 
                 @media screen and (max-width: 767px) {
                     display: -webkit-box;
@@ -77,8 +77,8 @@ header {
                     -ms-flex-pack: center;
                     justify-content: center;
                     width: 100%;
-                    color: $white-color;
-                    background-color: $black-color;
+                    color: $header-top-row-text-color;
+                    background-color: $header-top-row-bg-color;
                     padding-left: 15px;
                     padding-right: 15px;
                 }

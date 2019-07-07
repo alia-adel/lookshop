@@ -1,3 +1,29 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.products-row {
+    margin: 15px 0;
+    .nav-tabs {
+        border-bottom: none;
+        .nav-item {
+            margin-bottom: 0;
+            .nav-link {    
+                background-color: $products-tab-bg-color;  
+                border: none;     
+                &.active {
+                    background-color: $products-tab-active-bg-color;
+                    border: none;
+                }
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            padding: 17.5px 0;
+            &.active {
+                background-color: $products-tab-pane-active-bg-color;
+            }
+        }
+    }
+}

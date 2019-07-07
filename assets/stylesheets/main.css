@@ -13706,11 +13706,109 @@ html {
     margin-left: auto !important;
   }
 }
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 /**
  * Set up a decent box model on the root element
  */
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /**
@@ -13722,6 +13820,7 @@ html {
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -13729,7 +13828,7 @@ html {
  * Basic styles for links
  */
 a {
-  color: #fd916d;
+  color: #373737;
   text-decoration: none;
 }
 a:hover, a:active, a:focus {
@@ -13744,6 +13843,8 @@ body {
   color: #373737;
   font-family: "Arial", sans-serif;
   font-weight: normal;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 /**
@@ -13775,9 +13876,12 @@ body {
   width: 1px;
 }
 
+/*
+ * Override Bootstrap 4 variables
+ */
 header .top-row {
   height: 30px;
-  background-color: black;
+  background-color: #000;
 }
 @media screen and (max-width: 767px) {
   header .top-row {
@@ -13803,7 +13907,7 @@ header .top-row .top-row-container {
 header .top-row .top-row-container .customer-care-wrapper {
   font-size: 0.6875rem;
   font-weight: normal;
-  color: white;
+  color: #fff;
 }
 @media screen and (max-width: 767px) {
   header .top-row .top-row-container .customer-care-wrapper {
@@ -13838,7 +13942,7 @@ header .top-row .top-row-container .customer-care-wrapper > span {
   padding-left: 5px;
 }
 header .top-row .top-row-container .quick-menu-wrapper {
-  color: white;
+  color: #fff;
 }
 @media screen and (max-width: 767px) {
   header .top-row .top-row-container .quick-menu-wrapper {
@@ -13852,11 +13956,77 @@ header .top-row .top-row-container .quick-menu-wrapper {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    color: white;
-    background-color: black;
+    color: #fff;
+    background-color: #000;
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.app-btn {
+  color: #fff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  background-color: #fd926d;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0;
+  border-bottom: 2px solid #dd6b44;
+  padding: 7px 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.app-btn:hover, .app-btn:focus, .app-btn:active {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.app-btn--large {
+  font-size: 1rem;
+  padding: 18px;
+}
+
+.app-btn--pistache {
+  background-color: #4fafa0;
+  border-bottom: none;
+}
+
+.card {
+  background-color: grey;
+  width: 220px;
+  min-height: 395px;
+  margin: 10px;
+  transition: margin 0.2s linear;
+}
+.card:hover {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  height: 100%;
+}
+
+.products-row {
+  margin: 15px 0;
+}
+.products-row .nav-tabs {
+  border-bottom: none;
+}
+.products-row .nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+.products-row .nav-tabs .nav-item .nav-link {
+  background-color: #fff;
+  border: none;
+}
+.products-row .nav-tabs .nav-item .nav-link.active {
+  background-color: #fd926d;
+  border: none;
+}
+.products-row .tab-content .tab-pane {
+  padding: 17.5px 0;
+}
+.products-row .tab-content .tab-pane.active {
+  background-color: #fd926d;
 }
 
 /*# sourceMappingURL=main.css.map */

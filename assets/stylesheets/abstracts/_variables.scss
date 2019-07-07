@@ -2,53 +2,71 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Arial', sans-serif !default;
 
-/// text color
 /// @type Color
-$text-color: #373737;
+$primary-color: #fd926d;
+$secondary-color: #dd6b44;
 
-/// text color
-/// @type Color
-$text-color-2: #6C6C6C;
+/// @type Text Colors
+$text-primary: #373737;
+$text-black: #000;
+$text-white: #fff;
+$text-grey-light: #949393;
+$text-grey-light-tint-1: #9f9f9f;
+$text-grey-light-tint-2: #999;
+$text-grey-light-tint-3: #8d8d8d;
+$text-grey-light-tint-4: #838383;
+$text-grey-dark: #6c6c6c;
+$text-grey-dark-tint-1:#6b6b6b;
+$text-grey-dark-tint-2:#555;
+$text-grey-dark-tint-3: #373737;
+$text-grey-dark-tint-4: #414141;
+$text-grey-dark-tint-5: #544f4d;
+$text-brown: #78645d;
+$text-brown-tint-1: #c1aea8;
+$text-pistache: #4fafa0;
 
-/// text color
-/// @type Color
-$text-color-3: #9F9F9F;
+/// @type Background Colors
+$bg-orange: #fd926d;
+$bg-black: #000;
+$bg-white: #fff;
+$bg-grey-light: #ededed;
+$bg-grey-light-tint-1: #f7f7f7;
+$bg-grey-dark: #707070;
+$bg-grey-dark-tint-1: #867a76;
+$bg-grey-dark-tint-2: #3d3d3d;
+$bg-grey-dark-tint-3: #4c4c4c;
+$bg-grey-dark-tint-4: #525252;
+$bg-dark-grey-tint-5: #3b3b3b;
+$bg-pistache: #4fafa0;
 
-/// text color
-/// @type Color
-$text-color-4: #838383;
+/// @type Font Sizes
+$text-xsm: 0.75rem; // 12px
+$text-sm: 0.875rem; // 14px
+$text-med: 1rem; // 16px
 
-/// Primary brand color
-/// @type Color
-$primary-color: hsl(15, 97%, 71%);
+/// @type Components
+/// Buttons
+$btn-text-size: $text-xsm;
+$btn-lrg-text-size: $text-med;
+$btn-text-color: $text-white;
+$btn-bg-color-primary: $bg-orange;
+$btn-border-color-primary: $secondary-color;
+$btn-bg-color-secondary: $bg-pistache;
+$btn-border-color-secondary: transparent;
 
-/// Primary brand color tint2
-/// @type Color
-$primary-tint2-color: hsl(15, 69%, 57%); 
+/// Header top row
+$header-top-row-bg-color: $bg-black;
+$header-top-row-text-color: $text-white;
+$header-top-row-mob-text-color: $text-grey-light-tint-4;
 
-/// Secondary brand color
-/// @type Color
-$secondary-border: hsl(0, 0%, 32%);
-
-/// generic colors
-$black-color: hsl(0, 0%, 0%);
-$white-color: hsl(0, 0%, 100%);
-
-
-//=== Components' variables
-
-/// Button border brand color
-/// @type Color
-$btn-border: $primary-tint2-color;
-
+/// Products row
+$products-tab-bg-color: $bg-white;
+$products-tab-active-bg-color: $bg-orange;
+$products-tab-pane-active-bg-color: $bg-orange;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

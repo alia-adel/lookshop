@@ -1,0 +1,12 @@
+.card {
+    background-color: grey;
+    width: 220px;
+    min-height: 395px;
+    margin: 10px;
+    transition: margin 0.2s linear;
+    &:hover {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        height: 100%;
+    }
+}
