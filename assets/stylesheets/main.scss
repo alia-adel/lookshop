@@ -9,7 +9,9 @@
 // @import 'vendors/normalize';
 @import 'vendors/bootstrap/bootstrap.scss',
 'vendors/bootstrap/bootstrap-grid.scss',
-'vendors/slick/slick';
+'vendors/slick/slick',
+'vendors/slick/slick-theme',
+'vendors/icomoon.css';
 
 // 3. Base stuff
 @import 'base/base',

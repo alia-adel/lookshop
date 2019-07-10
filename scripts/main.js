@@ -103,14 +103,19 @@ $(function () {
         }
     });
 });
+//======================================= end of old section
+//======================================= New
+let self = this;
 
-// New
-$('#hot-tab > .wrapper').slick({
+$('#hot-tab > .products-list').slick({
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 4,
-    arrows: false,
-    lazyLoad: 'ondemand',
+    arrows: true,
+    infinite: false, // TODO check why this is ruining slick
+    // dots: true,
+    prevArrow: '<button type="button" class="slick-prev"><i aria-label="Previous" class="left-arrow"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i aria-label="Next" class="right-arrow"></i></button>',
     responsive: [
       {
         breakpoint: 768,
@@ -132,3 +137,25 @@ $('#hot-tab > .wrapper').slick({
       }
     ]
   });
+
+  $('#hot-tab > .products-list').on('init', function(slick) {
+    console.log(`Slick initialized: ${slick}`);
+    self.moveDOMElement('#hot-tab button.slick-prev','.products-row #slides-nav');
+    self.moveDOMElement('#hot-tab button.slick-next','.products-row #slides-nav');
+  });
+  self.moveDOMElement('#hot-tab button.slick-prev','.products-row #slides-nav');
+  self.moveDOMElement('#hot-tab button.slick-next','.products-row #slides-nav');
+  
+
+  /**
+   * @description Move DOM element from one section to the other
+   */
+  function moveDOMElement(fromLocation, toLocation) {
+      let fragment = document.createDocumentFragment();
+      let fromDOMElement = document.querySelector(fromLocation);
+      let toDOMElement = document.querySelector(toLocation);
+      if(fromDOMElement && toDOMElement) {
+          fragment.append(fromDOMElement);
+          toDOMElement.appendChild(fragment);
+      }
+  }

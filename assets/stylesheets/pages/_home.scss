@@ -4,13 +4,17 @@
 
 .products-row {
     margin: 15px 0;
+
     .nav-tabs {
         border-bottom: none;
+
         .nav-item {
             margin-bottom: 0;
-            .nav-link {    
-                background-color: $products-tab-bg-color;  
-                border: none;     
+
+            .nav-link {
+                background-color: $products-tab-bg-color;
+                border: none;
+
                 &.active {
                     background-color: $products-tab-active-bg-color;
                     border: none;
@@ -18,12 +22,64 @@
             }
         }
     }
+
     .tab-content {
         .tab-pane {
-            padding: 17.5px 0;
+            height: 455px;
+            max-width: 100%;
+            padding: 20px 0;
+            margin: auto;
+
             &.active {
                 background-color: $products-tab-pane-active-bg-color;
             }
         }
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: auto;
+        height: 47px;
+        width: 47px;
+        transform: none;
+        background-color: $products-nav-bg-color;
+        color: $products-nav-arrow-color;
+        cursor: default;
+
+        &[aria-disabled=false] {
+            background-color: $products-nav-active-bg-color;
+            cursor: pointer;
+
+            .right-arrow,
+            .left-arrow {
+                border-color: $products-nav-active-arrow-color;
+            }
+        }
+
+        &::before {
+            content: "";
+            display: none;
+        }
+    }
+
+    .right-arrow,
+    .left-arrow {
+        border: solid $products-nav-arrow-color;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .right-arrow {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .left-arrow {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
     }
 }

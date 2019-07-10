@@ -35,6 +35,7 @@ $bg-black: #000;
 $bg-white: #fff;
 $bg-grey-light: #ededed;
 $bg-grey-light-tint-1: #f7f7f7;
+$bg-grey-light-tint-2: #f2f2f2;
 $bg-grey-dark: #707070;
 $bg-grey-dark-tint-1: #867a76;
 $bg-grey-dark-tint-2: #3d3d3d;
@@ -63,10 +64,17 @@ $header-top-row-bg-color: $bg-black;
 $header-top-row-text-color: $text-white;
 $header-top-row-mob-text-color: $text-grey-light-tint-4;
 
-/// Products row
+/// Home products row
 $products-tab-bg-color: $bg-white;
 $products-tab-active-bg-color: $bg-orange;
 $products-tab-pane-active-bg-color: $bg-orange;
+$products-tab-pane-card-bg-color: $bg-white;
+$products-nav-bg-color: $bg-grey-light-tint-2;
+$products-nav-arrow-color: $bg-grey-dark;
+$products-nav-active-bg-color: $bg-orange;
+$products-nav-active-arrow-color: $bg-white;
+
+
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
