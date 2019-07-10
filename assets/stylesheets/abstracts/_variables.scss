@@ -76,7 +76,10 @@ $products-nav-arrow-color: $bg-grey-dark;
 $products-nav-active-bg-color: $bg-orange;
 $products-nav-active-arrow-color: $bg-white;
 
-
+/// Card
+$card-tag-text-color: $text-white;
+$card-tag-border-color: $bg-grey-dark;
+$card-description-text-color: $text-primary;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
