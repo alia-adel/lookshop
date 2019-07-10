@@ -4,7 +4,8 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Arial', sans-serif !default;
+$text-font-stack: 'Arial',
+sans-serif !default;
 
 /// @type Color
 $primary-color: #fd926d;
@@ -67,6 +68,7 @@ $header-top-row-mob-text-color: $text-grey-light-tint-4;
 /// Home products row
 $products-tab-bg-color: $bg-white;
 $products-tab-active-bg-color: $bg-orange;
+$products-tab-active-text-color: $text-white;
 $products-tab-pane-active-bg-color: $bg-orange;
 $products-tab-pane-card-bg-color: $bg-white;
 $products-nav-bg-color: $bg-grey-light-tint-2;
@@ -79,8 +81,7 @@ $products-nav-active-arrow-color: $bg-white;
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 320px,
+$breakpoints: ('small': 320px,
   'medium': 768px,
   'large': 1024px,
 ) !default;

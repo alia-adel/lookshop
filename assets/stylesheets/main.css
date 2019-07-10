@@ -14186,8 +14186,10 @@ header .top-row .top-row-container .quick-menu-wrapper {
   border: none;
 }
 .products-row .nav-tabs .nav-item .nav-link.active {
+  color: #fff;
   background-color: #fd926d;
   border: none;
+  border-radius: 0;
 }
 .products-row .tab-content .tab-pane {
   height: 455px;

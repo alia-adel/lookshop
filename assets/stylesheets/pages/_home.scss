@@ -16,8 +16,10 @@
                 border: none;
 
                 &.active {
+                    color: $products-tab-active-text-color;
                     background-color: $products-tab-active-bg-color;
                     border: none;
+                    border-radius: 0;
                 }
             }
         }
