@@ -108,12 +108,11 @@ $(function () {
 let self = this;
 
 $('#hot-tab > .products-list').slick({
-    centerMode: true,
+    // centerMode: true,
     centerPadding: '60px',
     slidesToShow: 4,
     arrows: true,
-    // infinite: false, // TODO check why this is ruining slick
-    // dots: true,
+    infinite: false,
     prevArrow: '<button type="button" class="slick-prev"><i aria-label="Previous" class="left-arrow"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i aria-label="Next" class="right-arrow"></i></button>',
     responsive: [
