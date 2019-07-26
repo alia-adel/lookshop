@@ -85,4 +85,17 @@ header {
             }
         }
     }
+    .bottom-row {
+        .bottom-row-wrapper {
+            .logo-wrapper {
+                a {
+                    img {
+                        display: block;
+                        height: 35px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
 }
